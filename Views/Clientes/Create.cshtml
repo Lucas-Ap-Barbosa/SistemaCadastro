@@ -1,0 +1,27 @@
+﻿@model SistemaCadastro.Models.Cliente
+
+<h2>Cadastrar Cliente</h2>
+
+<form asp-action="Create" method="post">
+    
+    <div>
+        <label>Nome</label><br />
+        <input asp-for="Nome" />
+    </div>
+
+    <div>
+        <label>Email</label><br />
+        <input asp-for="Email" />
+    </div>
+
+    <div>
+        <label>Telefone</label><br />
+        <input asp-for="Telefone" />
+    </div>
+
+    <br />
+
+    <button type="submit">Salvar</button>
+</form>
+
+<a href="/Clientes">Voltar</a>
